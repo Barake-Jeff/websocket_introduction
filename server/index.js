@@ -15,10 +15,17 @@ app.get('/', (req, res) => {
     res.sendFile(join(__dirname, 'index.html'));
 });
 
+// in this listener we will send the message to everyone but the sender you can comment it out if you want to testit out
+// io.on('connection', (socket) => {
+//     socket.on('chat message', (msg) => {
+//         socket.broadcast.emit('chat message', msg);
+//     });
+// });
+
+// in this listener everyone will have the message dispayed even the sender
 io.on('connection', (socket) => {
-    console.log('a user connected')
     socket.on('chat message', (msg) => {
-        console.log('message:', msg);
+        io.emit('chat message', msg);
     });
 });
 
