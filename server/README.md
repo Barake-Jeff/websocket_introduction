@@ -72,11 +72,15 @@ const socket = io();
 ```
 
 ## 📁 Project structure
+
+```tree
 .
-|── server/
-|   └── index.html
-|   └── index.js
-|   └── README.md
+└── server
+    ├── README.md
+    ├── index.html
+    ├── index.js
+    └── package.json
+```
 
 ## 📝 Future improvements
 - Add rooms/channels
