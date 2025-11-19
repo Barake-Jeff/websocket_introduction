@@ -34,8 +34,8 @@ in real time.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Barake-Jeff/websocket_introduction.git
+cd websocket_introduction
 ```
 
 install dependencies:
@@ -72,11 +72,15 @@ const socket = io();
 ```
 
 ## 📁 Project structure
+
+```tree
 .
-└── server/
-    └── index.html
-    └── index.js
-    └── README.md
+└── server
+    ├── README.md
+    ├── index.html
+    ├── index.js
+    └── package.json
+```
 
 ## 📝 Future improvements
 - Add rooms/channels
